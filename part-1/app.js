@@ -1,4 +1,4 @@
-let favNumber = 5; // Favorite number to fetch facts about
+let favNumber = 9; // Favorite number to fetch facts about
 let baseURL = "http://numbersapi.com"; // Base URL for the API
 
 // 1. Fetch a fact for the favorite number
@@ -7,7 +7,7 @@ $.getJSON(`${baseURL}/${favNumber}?json`, function(data) {
 });
 
 // 2. Fetch facts for an array of favorite numbers
-let favNumbers = [7, 11, 22];
+let favNumbers = [5, 18, 35];
 $.getJSON(`${baseURL}/${favNumbers}?json`, function(data) {
   console.log(data); // Log the fetched data for multiple numbers
 });
